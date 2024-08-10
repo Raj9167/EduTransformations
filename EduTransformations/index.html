@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Business Transformation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">EduTransformations</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#what-we-do">What We Do</a></li>
+                <li><a href="#key-components">Key Components</a></li>
+                <li><a href="#core-modules">Core Modules</a></li>
+                <li><a href="#regional-views">Regional Views</a></li>
+                <li><a href="#social-media">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="region-selector">
+            <select>
+                <option value="uk">UK</option>
+                <option value="uae">UAE</option>
+                <option value="us">US</option>
+                <option value="eu">EU</option>
+            </select>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="image-container">
+            <img src="hero.jpg" alt="Image">
+        </div>
+        <h1 class="glow-title animate-title">Transforming Educational Institutions</h1>
+        <p>Our mission is to revolutionize the education sector by implementing advanced technology and innovative strategies to enhance learning experiences, streamline operations, and improve overall efficiency.</p>
+    </section>
+
+    <section id="what-we-do">
+        <h2 class="animate-title">What We Do</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YXqgW4xPlZI?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="key-components">
+        <h2 class="animate-title">Key Components</h2>
+        <div class="components-grid">
+            <div class="component">
+                <img src="dc.png">
+                <h3>Digital Classrooms</h3>
+                <p>Implementing interactive digital classrooms, online learning platforms, and virtual reality to create immersive learning experiences.</p>
+            </div>
+            <div class="component">
+                <img src="admin.png">
+                <h3>Administrative Efficiency</h3>
+                <p>Streamlining administrative processes with advanced management systems, optimizing resource allocation, and improving workflow efficiency.</p>
+            </div>
+            <div class="component">
+                <img src="data.png">
+                <h3>Data Security and Compliance</h3>
+                <p>Ensuring the highest standards of data protection, student privacy, and regulatory compliance through robust security measures and continuous monitoring.</p>
+            </div>
+            <div class="component">
+                <img src="stdt.png">
+                <h3>Student Engagement</h3>
+                <p>Enhancing student engagement and satisfaction through personalized communication, mobile applications, and educational resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="core-modules">
+        <h2 class="animate-title">Core Modules of Transformation</h2>
+        <div class="components-grid">
+            <div class="component">
+                <h3>Curriculum Development</h3>
+                <p>Developing and updating curricula to meet the evolving needs of students and the demands of the modern world.</p>
+            </div>
+            <div class="component">
+                <h3>Faculty Training</h3>
+                <p>Providing continuous professional development and training for faculty members to ensure the highest quality of education delivery.</p>
+            </div>
+            <div class="component">
+                <h3>Technology Integration</h3>
+                <p>Seamlessly integrating cutting-edge technology into the educational infrastructure to enhance learning and administrative capabilities.</p>
+            </div>
+            <div class="component">
+                <h3>Performance Analytics</h3>
+                <p>Utilizing data analytics to track student performance, identify areas for improvement, and make informed decisions to enhance educational outcomes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="regional-views">
+        <h2 class="animate-title">Regional Views</h2>
+        <div class="regions-grid">
+            <div class="region">
+                <h3>UK</h3>
+                <p>Insights and strategies tailored to the educational landscape in the United Kingdom, addressing specific regional challenges and opportunities.</p>
+            </div>
+            <div class="region">
+                <h3>UAE</h3>
+                <p>Customized solutions for the educational sector in the United Arab Emirates, focusing on innovation and technological advancements.</p>
+            </div>
+            <div class="region">
+                <h3>US</h3>
+                <p>Comprehensive approaches to transforming education in the United States, incorporating best practices and cutting-edge technologies.</p>
+            </div>
+            <div class="region">
+                <h3>EU</h3>
+                <p>Strategies and solutions for enhancing educational institutions across the European Union, with an emphasis on collaboration and integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-media">
+        <div class="social-media">
+            <a href="#"><img src="icons8-linkedin-50.png" alt="LinkedIn"></a>
+            <a href="#"><img src="icons8-twitter-50.png" alt="Twitter"></a>
+            <a href="#"><img src="icons8-facebook-50.png" alt="Facebook"></a>
+            <a href="#"><img src="icons8-instagram-50.png" alt="Instagram"></a>
+        </div>
+        <div id="email">
+            <h3>enquiry@modusetp.com</h3>
+            <h3>​Head Office : Mayfair London, United Kingdom </h3>
+        </div>
+    </section>
+    <footer>
+        <div class="legal">
+            <p>&copy; 2024 EduTransformations. All rights reserved.</p>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+         const titles = document.querySelectorAll('.animate-title');
+
+         const animateOnScroll = () => {
+            titles.forEach(title => {
+            const titlePosition = title.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+
+            if (titlePosition < screenPosition) {
+                title.classList.add('slideIn');
+            } else {
+                title.classList.remove('slideIn');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // Trigger the animation on page load
+});
+
+    </script>
+</body>
+</html>
